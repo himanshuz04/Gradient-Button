@@ -35,4 +35,10 @@ button:hover{
     box-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff7a;
     cursor: pointer;
     transition-duration: 0.5s;
+    
+}
+button:active{
+    box-shadow: none;
+    transition-duration: 0s;
+    transform: scale(0.95);
 }
