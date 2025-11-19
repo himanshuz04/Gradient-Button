@@ -1,0 +1,38 @@
+body{
+    background-color: #0b0d10;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 1em 2em ;
+    width: max-content;
+    border: none;
+    border-radius: 1000px;
+    background-color: #161a20;
+    color: #f0f0f0;
+    font-family: 'Segoe UI';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font: inherit;
+}
+
+button::after{
+    content: '';
+    position: absolute;
+    width: 102%;
+    height: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient( to bottom right, #008cff, #e100ff7a);
+    z-index: -1;
+}
+button:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff7a;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
